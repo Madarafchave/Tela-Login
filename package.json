@@ -1,0 +1,15 @@
+{
+  "name": "hap",
+  "version": "1.0.0",
+  "description": "Aplicativo HAP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Healthandpsichology/HAP/blob/main/index.js"
+  },
+  "author": "Kauan Alexander",
+  "license": "ISC"
+}
