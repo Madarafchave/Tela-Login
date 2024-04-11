@@ -8,14 +8,14 @@ Use este link - <link> https://git-scm.com/downloads</link>
 
 <h1>No terminal</h1>
 
-<h2>------ Yarn -------</h2>h2>
+<h2>Yarn</h2>
 <pre>
   <code>
     npm install yarn
   </code>
 </pre>
 
-<h2>------ Expo -------</h2>
+<h2>Expo</h2>
 
 <pre>
   <code class= "expo">
