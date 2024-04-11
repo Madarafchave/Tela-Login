@@ -9,14 +9,14 @@ Use este link - https://git-scm.com/downloads
 <h1>No terminal</h1>
 
 ------ Yarn -------
+<pre>
   padding: 16px;
   <code>
     npm install yarn
   </code>
-
-<pre> 
-  padding: 16px;
   <code class= "expo">
     npm install expo
   </code>
 </pre>
+
+
