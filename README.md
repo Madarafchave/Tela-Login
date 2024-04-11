@@ -8,6 +8,12 @@ Use este link - https://git-scm.com/downloads
 
 <h1>No terminal</h1>
 
+<pre> 
+  <code>
+    npm install yarn
+  </code>
+</pre>
+
 ------ Yarn -------
 npm install yarn
 -------------------
