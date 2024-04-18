@@ -1,51 +1,18 @@
-import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Alert, Image, Text } from 'react-native';
-import { loginScreenStyles } from './styles/LoginScreenStyles';
+import React from 'react';
+import { StatusBar } from 'react-native';
 
-const LoginScreen = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+import Login from './src/pages/Login/Login';
+import {loginStyles} from './src/pages/Login/LoginStyles';
 
-  const handleLogin = () => {
-    if (email === 'usuario@example.com' && password === 'senha123') {
-      Alert.alert('Login bem-sucedido!');
-    } else {
-      Alert.alert('Erro', 'Nome ou senha incorretos. Por favor, tente novamente.');
-    }
-  };
-
-  const handleForgotPassword = () => {
-    Alert.alert('Recuperação de senha', 'Em breve enviaremos instruções para recuperar sua senha.');
-  };
-
+export default function App() {
   return (
-    <View style={loginScreenStyles.container}>
-      <Image
-        source={require('./assets/LogoHAP.png')}
-        style={loginScreenStyles.logo}
-        resizeMode="contain"
+    <>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="#191919"
       />
-      <TextInput
-        placeholder="E-mail"
-        value={email}
-        onChangeText={text => setEmail(text)}
-        style={loginScreenStyles.input}
-      />
-      <TextInput
-        placeholder="Senha"
-        value={password}
-        onChangeText={text => setPassword(text)}
-        secureTextEntry={true}
-        style={loginScreenStyles.input}
-      />
-      <TouchableOpacity onPress={handleForgotPassword}>
-        <Text style={loginScreenStyles.forgotPassword}>Esqueceu sua senha?</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={handleLogin} style={loginScreenStyles.button}>
-        <Text style={loginScreenStyles.buttonText}>Entrar</Text>
-      </TouchableOpacity>
-    </View>
+
+      <Login />
+    </>
   );
 };
-
-export default LoginScreen;
